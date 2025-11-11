@@ -1,39 +1,23 @@
-# def calculate_bmi(height,weight):
-#     print("Height =" + str(height))
-#     print("Weight =" + str(weight))
-#     bmi= weight/(height * height)
-#     print("BMI = " + str(bmi))
+def display_main_menu():
+    print("display_main_menu")
 
-#     if bmi< 18.5:
-#         print("Underweight")
-        
-#     elif bmi >= 18.5 and bmi < 24.9:
-#         print("Normal weight")
+def get_use_input():
+    uset_input = input()
 
-#     else:4
-#         print("Overweight")
+    string_list = user_input.split(",")
 
+    float_list = []
+    for item in string_list:
+        float_list.append(float(num_str))
 
+    return float_list
 
-# def display_main_menu(numbers):
-#     print(numbers)
-#     numbers = input("Enter a number between 1 to 5: ")
-#     return numbers
+def calc_average_temperature(num_list):
+    total = sum(num_list)
+    average = total / len(num_list)
+    return average
 
-# def main():
-#     print("ET0735(DevOps for AIoT)-Lab2 - Introdiction to Python")
-#     a = display_main_menu(0)
-#     print(a)
-# if __name__ == "__main__":
-#     main()
-
-
-# print ('Enter your name:')
-# name = input ()
-# print ('Hello, ' + name)
-
-txt = "welcome to the jungle"
-
-x = txt.split()
-
-print(x)
+def calc_min_max_temperature(num_list):
+    min = min(num_list)
+    max = max(num_list)
+    return [min,max]
